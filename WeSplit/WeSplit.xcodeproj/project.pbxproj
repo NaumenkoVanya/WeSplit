@@ -11,6 +11,7 @@
 		CAB659992B763B5C00889DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB659982B763B5C00889DFD /* ContentView.swift */; };
 		CAB6599B2B763B5E00889DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB6599A2B763B5E00889DFD /* Assets.xcassets */; };
 		CAB6599E2B763B5E00889DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB6599D2B763B5E00889DFD /* Preview Assets.xcassets */; };
+		CAB659A52B7651C400889DFD /* SixteenDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB659A42B7651C400889DFD /* SixteenDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CAB659982B763B5C00889DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAB6599A2B763B5E00889DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB6599D2B763B5E00889DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAB659A42B7651C400889DFD /* SixteenDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				CAB659982B763B5C00889DFD /* ContentView.swift */,
 				CAB6599A2B763B5E00889DFD /* Assets.xcassets */,
 				CAB6599C2B763B5E00889DFD /* Preview Content */,
+				CAB659A62B7651C900889DFD /* WalkthroughByDay */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
@@ -65,6 +68,14 @@
 				CAB6599D2B763B5E00889DFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAB659A62B7651C900889DFD /* WalkthroughByDay */ = {
+			isa = PBXGroup;
+			children = (
+				CAB659A42B7651C400889DFD /* SixteenDay.swift */,
+			);
+			path = WalkthroughByDay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB659A52B7651C400889DFD /* SixteenDay.swift in Sources */,
 				CAB659992B763B5C00889DFD /* ContentView.swift in Sources */,
 				CAB659972B763B5C00889DFD /* WeSplitApp.swift in Sources */,
 			);
