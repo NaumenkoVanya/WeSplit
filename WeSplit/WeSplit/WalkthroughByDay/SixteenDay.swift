@@ -14,6 +14,7 @@ struct SixteenDay: View {
   
     @State private var tapCount = 0
     @State private var name = ""
+    @State private var secondName = ""
     
     
     var body: some View {
@@ -24,7 +25,8 @@ struct SixteenDay: View {
                 Text("Your name is \(name)")
                 
                 Section {
-                    Text("Hello, world!")
+                    TextField("Enter your second name", text: $secondName)
+                    Text("You second name \(secondName)")
                 }
             }
             .navigationTitle("SwiftUI")
