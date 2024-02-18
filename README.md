@@ -6,9 +6,9 @@
 
 # Actual Features
 ____
-+ This is a game of composing words from the proposed option.
-+ Keeps a count of words and the number of letters.
-+ Built-in lock with criteria for the word.
++ An application for splitting bills between friends.
++ When you select the tip size, the application immediately displays the result of the bil.
++ It is possible to specify how many people the bill should be distributed to
 
 # App Arquitecture
 ____
