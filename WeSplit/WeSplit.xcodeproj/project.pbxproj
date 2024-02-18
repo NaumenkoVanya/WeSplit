@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA4DDE5A2B80C48B004D3695 /* Converted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DDE592B80C48B004D3695 /* Converted.swift */; };
 		CAB659972B763B5C00889DFD /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB659962B763B5C00889DFD /* WeSplitApp.swift */; };
 		CAB659992B763B5C00889DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB659982B763B5C00889DFD /* ContentView.swift */; };
 		CAB6599B2B763B5E00889DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB6599A2B763B5E00889DFD /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA4DDE592B80C48B004D3695 /* Converted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converted.swift; sourceTree = "<group>"; };
 		CAB659932B763B5C00889DFD /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB659962B763B5C00889DFD /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
 		CAB659982B763B5C00889DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		CAB659A62B7651C900889DFD /* WalkthroughByDay */ = {
 			isa = PBXGroup;
 			children = (
+				CA4DDE592B80C48B004D3695 /* Converted.swift */,
 				CAB659A42B7651C400889DFD /* SixteenDay.swift */,
 				CAB659A72B781C4000889DFD /* SeventeenthDay.swift */,
 				CAB659A92B78200C00889DFD /* EighteenthDay.swift */,
@@ -162,6 +165,7 @@
 				CAB659992B763B5C00889DFD /* ContentView.swift in Sources */,
 				CAB659A82B781C4000889DFD /* SeventeenthDay.swift in Sources */,
 				CAB659AA2B78200C00889DFD /* EighteenthDay.swift in Sources */,
+				CA4DDE5A2B80C48B004D3695 /* Converted.swift in Sources */,
 				CAB659972B763B5C00889DFD /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
