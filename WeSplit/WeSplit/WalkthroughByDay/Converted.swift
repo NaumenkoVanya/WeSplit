@@ -6,63 +6,55 @@
 //
 
 import SwiftUI
+// import Foundation
 
 struct Converted: View {
-    let unitArray = ["millimetre", "centimetre", "metre", "kilometre"]
-    @State private var unitВefaultOf = "metre"
-    @State private var unitВefaultIn = "kilometre"
-
-    @State private var checkAmount = 0.0
-    @State private var numberOfPeople = 2
-    @State private var tipPercentage = 20
+    @State private var inputValue = ""
+    @State private var inputUnit = 0
+    @State private var outputUnit = 1
     
-    @FocusState private var amountIsFocused: Bool
-
-    var totalPerPerson: Double {
-        let peopleCount = Double(numberOfPeople + 2)
-        let tipSelection = Double(tipPercentage)
-
-        let tipValue = checkAmount / 100 * tipSelection
-        let grandTotal = checkAmount + tipValue
-        let amountPerPerson = grandTotal / peopleCount
-
-        return amountPerPerson
+    let units: [UnitLength] = [.centimeters, .meters, .kilometers]
+    let unitLabels = ["Centimeters", "Meters", "Kilometers"]
+    
+    var convertedValue: Measurement<UnitLength>? {
+        guard let inputValue = Double(inputValue) else { return nil }
+        let inputUnit = units[inputUnit]
+        let outputUnit = units[outputUnit]
+        let inputMeasurement = Measurement(value: inputValue, unit: inputUnit)
+        return inputMeasurement.converted(to: outputUnit)
     }
-
-//    var totalCheck: Double {
-//        let tipSelection = Double(tipPercentage)
-//        let tipValue = checkAmount / 100 * tipSelection
-//        let grandTotal = checkAmount + tipValue
-//
-//        return grandTotal
-//    }
-
     var body: some View {
-        NavigationStack {
-            Form {
-                Section("enter the number") {
-                    TextField("Amount", value: $checkAmount, format: .number)
-                }
-                .keyboardType(.numberPad)
-                Section("select units of measurement") {
-                    Picker("unit of", selection: $unitВefaultOf) {
-                        ForEach(unitArray, id: \.self) {
-                            Text("\($0)")
-                        }
-                    }
-                    Picker("unit in", selection: $unitВefaultIn) {
-                        ForEach(unitArray, id: \.self) {
-                            Text("\($0)")
-                        }
-                    }
-                }
-
-                Section("result") {
-                    Text(totalPerPerson, format: .number)
+        VStack {
+            TextField("Enter value", text: $inputValue)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.decimalPad)
+            
+            Picker("Input Unit", selection: $inputUnit) {
+                ForEach(0..<units.count) {
+                    Text(self.unitLabels[$0]).tag($0)
                 }
             }
-            .navigationTitle("Converted")
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+            
+            Picker("Output Unit", selection: $outputUnit) {
+                ForEach(0..<units.count) {
+                    Text(self.unitLabels[$0]).tag($0)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+            
+            if let convertedValue = convertedValue {
+                Text("Converted Value: \(convertedValue.description)")
+            } else {
+                Text("Invalid input")
+            }
+            
+            Spacer()
         }
+        .padding()
     }
 }
 
