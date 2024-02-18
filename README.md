@@ -2,7 +2,7 @@
 
 # ScreenShots
 
-<img width="338" alt="Снимок экрана 2024-02-18 в 11 43 06" src="https://github.com/NaumenkoVanya/WordScramble/assets/95250432/3e66a06d-862e-4025-b49e-9bbeb4caa417">
+<img width="338" alt="Снимок экрана 2024-02-18 в 11 43 06" src="https://github.com/NaumenkoVanya/WeSplit/assets/95250432/57d8267a-f2c8-43b8-98e2-f4b8518a4c0b">
 
 # Actual Features
 ____
