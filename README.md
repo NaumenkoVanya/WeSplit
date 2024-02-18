@@ -16,7 +16,7 @@ ____
 
 ## Application ScreenShots
 \
-<img width="338" ![Simulator Screenshot - iPhone 15 Pro - 2024-02-18 at 12 07 23](https://github.com/NaumenkoVanya/WeSplit/assets/95250432/57d8267a-f2c8-43b8-98e2-f4b8518a4c0b)>
+![Simulator Screenshot - iPhone 15 Pro - 2024-02-18 at 12 07 23](https://github.com/NaumenkoVanya/WeSplit/assets/95250432/57d8267a-f2c8-43b8-98e2-f4b8518a4c0b)
 
 ![Simulator Screenshot - iPhone 15 Pro - 2024-02-18 at 12 07 23](https://github.com/NaumenkoVanya/WeSplit/assets/95250432/57d8267a-f2c8-43b8-98e2-f4b8518a4c0b)
 ![Simulator Screenshot - iPhone 15 Pro - 2024-02-18 at 12 07 33](https://github.com/NaumenkoVanya/WeSplit/assets/95250432/8af997a1-a0d8-4cb4-8287-d3c705b2ad2a)
